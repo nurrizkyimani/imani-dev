@@ -44,3 +44,5 @@ next-env.d.ts
 
 # Log files
 *.log
+/id_rsa_nurrizkyimani
+/id_rsa_nurrizkyimani.pub
