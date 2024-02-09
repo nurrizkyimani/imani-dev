@@ -7,15 +7,18 @@ const navItems = {
     '/work': {
         name: 'work',
     },
+    '/gallery': {
+        name: 'gallery',
+    },
     '/blog': {
         name: 'blog',
     },
-    '/guestbook': {
-        name: 'guestbook',
+    '/portofolio': {
+        name: 'portfolio',
     },
 };
 
-export function Navbar() {
+export function NavBar() {
     return (
         <aside className="-ml-[8px] mb-16 tracking-tight">
             <div className="lg:sticky lg:top-20">
@@ -29,7 +32,8 @@ export function Navbar() {
                                 <Link
                                     key={path}
                                     href={path}
-                                    className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2"
+                                    // Add a font size class here, for example: text-lg
+                                    className="text-xl transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2"
                                 >
                                     {name}
                                 </Link>
